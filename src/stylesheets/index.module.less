@@ -1,0 +1,116 @@
+@import "./variables.less";
+.container {
+  .intro {
+    position: relative;
+    height: 100vh !important;
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      z-index: 50;
+      width: 80%;
+      color: white;
+      max-width: 900px;
+      font-weight: 900;
+      font-size: 4rem;
+      transform: translate(0%, -50%);
+      strong {
+        color: #badfff;
+      }
+    }
+    img {
+      width: 100vw !important;
+      height: 100vh !important;
+      object-fit: cover;
+      z-index: 1;
+      display: block;
+    }
+    :global {
+      .gatsby-image-wrapper {
+        background: #404144;
+        height: 100vh !important;
+        img {
+          filter: brightness(0.9);
+        }
+        > img {
+          filter: blur(10px) brightness(0.9);
+        }
+      }
+    }
+  }
+  .servicios {
+    height: fit-content;
+    position: relative;
+    > div {
+      position: relative;
+      z-index: 5;
+      max-width: 1000px;
+      width: 100%;
+      margin: auto;
+      padding-top: 10px;
+      h2,
+      h2 b {
+        font-size: 2.5rem;
+        text-align: left;
+        font-weight: 700 !important;
+      }
+    }
+  }
+  .servicios::after {
+    content: "";
+    display: block;
+    width: 23%;
+    background: aliceblue;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .service,
+  .serviceAlt {
+    padding-top: 50px;
+    position: relative;
+    h2 {
+      a {
+        display: inline-block;
+        padding: 20px;
+        right: 0;
+        z-index: 20;
+        > :not(b) {
+          color: @secondary !important;
+        }
+      }
+    }
+    :global {
+      .gatsby-image-wrapper {
+        width: 70%;
+        height: 300px !important;
+        img {
+          width: 100% !important;
+          height: 300px !important;
+          object-position: center;
+        }
+        img {
+          filter: brightness(1.1);
+        }
+        > img {
+          filter: blur(10px) brightness(1.1);
+        }
+      }
+    }
+  }
+  .serviceAlt {
+    h2 {
+      text-align: right !important;
+    }
+    .image {
+      display: flex;
+      justify-content: flex-end;
+    }
+    :global {
+      .gatsby-image-wrapper {
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import "./variables.less";
+@import (inline) "./fonts.css";
+body,
+html {
+  background: white;
+  font-weight: 500;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  font-family: "Roboto", Helvetica, Arial, Helvetica, sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  color: @primary;
+  text-decoration: none !important;
+  font-weight: 300;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: @secondary;
+  font-weight: 300;
+  margin: 0;
+}
+h1 b,
+h2 b,
+h3 b,
+h4 b,
+h5 b,
+p b {
+  color: @primary;
+  font-weight: 500;
+}
+p {
+  font-size: 15px;
+}
