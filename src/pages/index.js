@@ -15,6 +15,14 @@ export default ({ data }) => (
       </h1>
       <Img fluid={data.banner.childImageSharp.fluid} />
     </div>
+    <div className={classes.logos}>
+      <h2>
+        <strong>+60</strong> años de experiencia brindando confianza y
+        satisfacción.
+      </h2>
+      <p>Trabajamos con las marcas principales del mercado.</p>
+        <Img fluid={data.logos.childImageSharp.fluid} />
+    </div>
     <div className={classes.servicios}>
       <div>
         <div className={classes.service}>
@@ -56,10 +64,21 @@ export default ({ data }) => (
         </div>
       </div>
     </div>
+    <div className={classes.contact}>
+      <h3>Contacto</h3>
+      <p>[Forma de contacto aquí]</p>
+    </div>
   </div>
 )
 
 export const query = graphql`
+  fragment CompanyLogo on File {
+    childImageSharp {
+      fluid(quality: 100, maxWidth: 120) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+  }
   query {
     banner: file(relativePath: { eq: "washing-machines-intro.jpg" }) {
       childImageSharp {
@@ -85,6 +104,13 @@ export const query = graphql`
     minisplit: file(relativePath: { eq: "minisplit.jpg" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 1000) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    logos: file(relativePath: { eq: "logos/all_logos.png" }) {
+      childImageSharp {
+        fluid(quality: 100, maxWidth: 700) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
