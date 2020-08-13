@@ -21,7 +21,17 @@ export default ({ data }) => (
         satisfacción.
       </h2>
       <p>Trabajamos con las marcas principales del mercado.</p>
-        <Img fluid={data.logos.childImageSharp.fluid} />
+      <div>
+        <Img fluid={data.logo1.childImageSharp.fluid} />
+        <Img fluid={data.logo2.childImageSharp.fluid} />
+        <Img fluid={data.logo3.childImageSharp.fluid} />
+        <Img fluid={data.logo4.childImageSharp.fluid} />
+        <Img fluid={data.logo5.childImageSharp.fluid} />
+        <Img fluid={data.logo6.childImageSharp.fluid} />
+        <Img fluid={data.logo7.childImageSharp.fluid} />
+        <Img fluid={data.logo8.childImageSharp.fluid} />
+        <Img fluid={data.logo9.childImageSharp.fluid} />
+      </div>
     </div>
     <div className={classes.servicios}>
       <div>
@@ -108,12 +118,32 @@ export const query = graphql`
         }
       }
     }
-    logos: file(relativePath: { eq: "logos/all_logos.png" }) {
-      childImageSharp {
-        fluid(quality: 100, maxWidth: 700) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
+    logo1: file(relativePath: { eq: "logos/samsung.png" }) {
+      ...CompanyLogo
+    }
+    logo2: file(relativePath: { eq: "logos/lg.png" }) {
+      ...CompanyLogo
+    }
+    logo3: file(relativePath: { eq: "logos/bosch.png" }) {
+      ...CompanyLogo
+    }
+    logo4: file(relativePath: { eq: "logos/electrolux.png" }) {
+      ...CompanyLogo
+    }
+    logo5: file(relativePath: { eq: "logos/frigidaire.png" }) {
+      ...CompanyLogo
+    }
+    logo6: file(relativePath: { eq: "logos/supermatic.png" }) {
+      ...CompanyLogo
+    }
+    logo7: file(relativePath: { eq: "logos/mabe.png" }) {
+      ...CompanyLogo
+    }
+    logo8: file(relativePath: { eq: "logos/whirpool.png" }) {
+      ...CompanyLogo
+    }
+    logo9: file(relativePath: { eq: "logos/ge.png" }) {
+      ...CompanyLogo
     }
   }
 `

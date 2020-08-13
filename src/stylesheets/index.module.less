@@ -56,8 +56,21 @@
       padding: 20px 10px 50px;
     }
     > div {
-    max-width: 500px;
-    margin: auto;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      :global {
+        .gatsby-image-wrapper {
+          display: inline-block;
+          width: 120px !important;
+          height: auto !important;
+          margin: 20px;
+          img {
+            width: 120px !important;
+            height: auto !important;
+          }
+        }
+      }
     }
   }
   .servicios {
