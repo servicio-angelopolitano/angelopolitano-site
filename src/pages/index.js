@@ -34,31 +34,33 @@ export default ({ data }) => (
       </div>
     </div>
     <div className={classes.servicios}>
-      <div>
-        <div className={classes.service}>
-          <div className={classes.text}>
-            <h2>
-              <Link to="/refrigeracion">
-                <b>Refrigeradores</b> <br />& Congeladores
-              </Link>
-            </h2>
-          </div>
-          <div className={classes.image}>
-            <Img fluid={data.fridge.childImageSharp.fluid} />
-          </div>
+      <div className={classes.service}>
+        <div className={classes.text}>
+          <h2>
+            <Link to="/refrigeracion">
+              <b>Refrigeradores</b> <br />& Congeladores
+            </Link>
+          </h2>
+          <p>
+            Soporte técnico de linea blanca a domicilio en la ciudad de{" "}
+            <b>Puebla</b> y área metropolitana
+          </p>
         </div>
-        <div className={classes.serviceAlt}>
-          <div className={classes.text}>
-            <h2>
-              <Link to="/lavado-secado">
-                <b>Lavadoras</b> <br />& Secadoras
-              </Link>
-            </h2>
-          </div>
-          <div className={classes.image}>
-            <Img fluid={data.machine.childImageSharp.fluid} />
-          </div>
+        <Img fluid={data.fridge.childImageSharp.fluid} />
+      </div>
+      <div className={classes.serviceAlt}>
+        <div className={classes.text}>
+          <h2>
+            <Link to="/lavado-secado">
+              <b>Lavadoras</b> <br />& Secadoras
+            </Link>
+          </h2>
+          <p>
+            Soporte técnico de linea blanca a domicilio en la ciudad de{" "}
+            <b>Puebla</b> y área metropolitana
+          </p>
         </div>
+        <Img fluid={data.machine.childImageSharp.fluid} />
       </div>
       <div className={classes.service}>
         <div className={classes.text}>
@@ -68,10 +70,12 @@ export default ({ data }) => (
               Acondicionado
             </Link>
           </h2>
+          <p>
+            Soporte técnico de linea blanca a domicilio en la ciudad de{" "}
+            <b>Puebla</b> y área metropolitana
+          </p>
         </div>
-        <div className={classes.image}>
-          <Img fluid={data.minisplit.childImageSharp.fluid} />
-        </div>
+        <Img fluid={data.minisplit.childImageSharp.fluid} />
       </div>
     </div>
     <div className={classes.contact}>

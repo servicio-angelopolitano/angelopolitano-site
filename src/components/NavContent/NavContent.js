@@ -10,8 +10,8 @@ export default () => (
     </Link>
     <ul>
       <li>
-        <Link to="/lavado-secado">Lavado/Secado</Link>
-        <Link to="/refrigeracion">Refrigeracion</Link>
+        <Link to="/lavado-secado">Lavadoras & Secadoras</Link>
+        <Link to="/refrigeracion">Refrigeradores</Link>
         <Link to="/aire-acondicionado">Aire Acondicionado</Link>
       </li>
     </ul>
