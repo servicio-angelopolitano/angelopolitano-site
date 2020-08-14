@@ -96,7 +96,7 @@ export const query = graphql`
   query {
     banner: file(relativePath: { eq: "washing-machines-intro.jpg" }) {
       childImageSharp {
-        fluid(quality: 100, maxWidth: 2400) {
+        fluid(quality: 100, maxWidth: 1800) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
