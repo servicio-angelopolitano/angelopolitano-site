@@ -23,15 +23,15 @@ export default ({ data }) => (
       </h2>
       <p>Trabajamos con las marcas principales del mercado.</p>
       <div>
-        <Img fluid={data.logo1.childImageSharp.fluid} />
-        <Img fluid={data.logo2.childImageSharp.fluid} />
-        <Img fluid={data.logo3.childImageSharp.fluid} />
-        <Img fluid={data.logo4.childImageSharp.fluid} />
-        <Img fluid={data.logo5.childImageSharp.fluid} />
-        <Img fluid={data.logo6.childImageSharp.fluid} />
-        <Img fluid={data.logo7.childImageSharp.fluid} />
-        <Img fluid={data.logo8.childImageSharp.fluid} />
-        <Img fluid={data.logo9.childImageSharp.fluid} />
+        <Img fluid={data.logo1.childImageSharp.fluid} loading="lazy" />
+        <Img fluid={data.logo2.childImageSharp.fluid} loading="lazy" />
+        <Img fluid={data.logo3.childImageSharp.fluid} loading="lazy" />
+        <Img fluid={data.logo4.childImageSharp.fluid} loading="lazy" />
+        <Img fluid={data.logo5.childImageSharp.fluid} loading="lazy" />
+        <Img fluid={data.logo6.childImageSharp.fluid} loading="lazy" />
+        <Img fluid={data.logo7.childImageSharp.fluid} loading="lazy" />
+        <Img fluid={data.logo8.childImageSharp.fluid} loading="lazy" />
+        <Img fluid={data.logo9.childImageSharp.fluid} loading="lazy" />
       </div>
     </div>
     <div className={classes.servicios}>
@@ -50,7 +50,7 @@ export default ({ data }) => (
             <button>Detalles</button>
           </Link>
         </div>
-        <Img fluid={data.fridge.childImageSharp.fluid} />
+        <Img fluid={data.fridge.childImageSharp.fluid} loading="lazy" />
       </div>
       <div className={classes.serviceAlt}>
         <div className={classes.text}>
@@ -68,7 +68,7 @@ export default ({ data }) => (
             <button>Detalles</button>
           </Link>
         </div>
-        <Img fluid={data.machine.childImageSharp.fluid} />
+        <Img fluid={data.machine.childImageSharp.fluid} loading="lazy" />
       </div>
       <div className={classes.service}>
         <div className={classes.text}>
@@ -86,7 +86,7 @@ export default ({ data }) => (
             <button>Detalles</button>
           </Link>
         </div>
-        <Img fluid={data.minisplit.childImageSharp.fluid} />
+        <Img fluid={data.minisplit.childImageSharp.fluid} loading="lazy" />
       </div>
     </div>
     <ContactForm />
