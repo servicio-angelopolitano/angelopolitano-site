@@ -43,8 +43,9 @@ export default ({ data }) => (
             </Link>
           </h2>
           <p>
-            Soporte técnico de linea blanca a domicilio en la ciudad de{" "}
-            <b>Puebla</b> y área metropolitana
+            <strong>Soporte Técnico</strong> de Refrigeración{" "}
+            <strong>a Domicilio</strong> en <strong>Puebla</strong> y area
+            metropolitana.
           </p>
           <Link to="/refrigeracion">
             <button>Detalles</button>
@@ -60,8 +61,9 @@ export default ({ data }) => (
             </Link>
           </h2>
           <p>
-            Soporte técnico de linea blanca a domicilio en la ciudad de{" "}
-            <b>Puebla</b> y área metropolitana
+            <strong>Soporte Técnico</strong> de Linea Blanca{" "}
+            <strong>a Domicilio</strong> en <strong>Puebla</strong> y area
+            metropolitana.
           </p>
 
           <Link to="/lavado-secado">
@@ -79,8 +81,8 @@ export default ({ data }) => (
             </Link>
           </h2>
           <p>
-            Soporte técnico de linea blanca a domicilio en la ciudad de{" "}
-            <b>Puebla</b> y área metropolitana
+            <strong>Aires Acondicionados</strong> en <strong>Puebla</strong> y
+            area metropolitana.
           </p>
           <Link to="/refrigeracion">
             <button>Detalles</button>
@@ -88,6 +90,17 @@ export default ({ data }) => (
         </div>
         <Img fluid={data.minisplit.childImageSharp.fluid} loading="lazy" />
       </div>
+    </div>
+    <div className={classes.black}>
+      <h3>
+        GARANTÍA <b>POR ESCRITO</b>
+      </h3>
+      <h3>
+        SERVICIO <b>EL MISMO DIA</b>
+      </h3>
+      <h3>
+        REFACCIONES <b>ORIGINALES</b>
+      </h3>
     </div>
     <ContactForm />
   </div>

@@ -10,8 +10,8 @@ export default ({ data }) => (
     <Nav white />
     <div className={classes.intro}>
       <h1>
-        <strong>Soporte Técnico de Refrigeración a Domicilio</strong> en la
-        ciudad de Puebla y area metropolitana.
+        <strong>Soporte Técnico de Refrigeración a Domicilio</strong> en Puebla
+        y area metropolitana.
       </h1>
       <Img fluid={data.banner.childImageSharp.fluid} />
     </div>
@@ -32,6 +32,57 @@ export default ({ data }) => (
         <span>Y más...</span>
       </div>
     </div>
+    <div className={classes.allDetails}>
+      <div className={classes.detailsFloor}>
+        <div className={classes.text}>
+          <h3>Reparación</h3>
+          <div>
+            <p>
+              Su refrigerador tira agua, hace escarcha, no enciende o no enfría,
+              nuestro servicio técnico especializado consta del{" "}
+              <b>análisis y revisión</b> de la falla, brindándole un{" "}
+              <b>presupuesto competitivo</b>, garantía por escrito y una{" "}
+              <b>atención</b> personalizada, contamos con
+              <b>refacciones originales</b> para garantizar el buen
+              funcionamiento de su equipo.
+            </p>
+          </div>
+        </div>
+        <Img fluid={data.reparacion.childImageSharp.fluid} />
+      </div>
+      <div
+        className={[classes.detailsFloor, classes.detailsReversed].join(" ")}
+      >
+        <div className={classes.text}>
+          <h3>Mantenimiento</h3>
+          <div>
+            <p>
+              El <b>mantenimiento</b> en todos los equipos de{" "}
+              <b>refrigeración</b> es primordial y recomendablemente realizarlo
+              una vez por año, de preferencia antes de la temporada de calor de
+              esta manera aseguramos <b>larga vida</b> y{" "}
+              <b>excelente funcionalidad</b>.
+            </p>
+          </div>
+        </div>
+        <Img fluid={data.mantenimiento.childImageSharp.fluid} />
+      </div>
+      <div className={classes.detailsFloor}>
+        <div className={classes.text}>
+          <h3>Instalación</h3>
+          <div>
+            <p>
+              Contamos con <b>tecnico especializados</b> en refrigeracion,
+              nuestro personal esta constantemente actualizando para brindarle
+              el servicio en la <b>instalación</b> de sus equipos en base a los
+              lineamientos establecidos por el fabricante, garantizando un{" "}
+              <b>buen funcionamiento </b>de sus aparatos.
+            </p>
+          </div>
+        </div>
+        <Img fluid={data.instalacion.childImageSharp.fluid} />
+      </div>
+    </div>
     <ContactForm />
   </div>
 )
@@ -41,6 +92,27 @@ export const query = graphql`
     banner: file(relativePath: { eq: "fridge-tall.jpg" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 800) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    mantenimiento: file(relativePath: { eq: "ref_mantenimiento.jpg" }) {
+      childImageSharp {
+        fluid(quality: 100, maxWidth: 700) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    reparacion: file(relativePath: { eq: "ref_reparacion.jpg" }) {
+      childImageSharp {
+        fluid(quality: 100, maxWidth: 700) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    instalacion: file(relativePath: { eq: "ref_instalacion.jpeg" }) {
+      childImageSharp {
+        fluid(quality: 100, maxWidth: 700) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
