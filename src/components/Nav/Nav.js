@@ -3,6 +3,9 @@ import { Helmet } from "react-helmet"
 import classes from "./Nav.module.less"
 import NavContent from "../NavContent/NavContent"
 
+const NETLIFY_URL = "https://servicioangelopolitano.netlify.app"
+const REAL_URL = "https://www.servicioangelopolitano.com"
+
 export default ({ title, canonical, description, white }) => {
   let [scrolled, setScrolled] = useState(false)
 
@@ -22,15 +25,25 @@ export default ({ title, canonical, description, white }) => {
     <>
       {canonical ? (
         <Helmet>
+          <html lang="es" />
           <meta charSet="utf-8" />
           <title>{title}</title>
-          <link rel="canonical" href={canonical} />
-          <html lang="es" />
+          <link
+            rel="canonical"
+            href={
+              (process.env.GATSBY_ACTIVE_ENV === "QA"
+                ? NETLIFY_URL
+                : REAL_URL) + canonical
+            }
+          />
           <meta name="description" content={description} />
         </Helmet>
       ) : null}
       <div
-        className={[classes.container, scrolled || white ? classes.blue : ""].join(" ")}
+        className={[
+          classes.container,
+          scrolled || white ? classes.blue : "",
+        ].join(" ")}
       >
         <div className={classes.content}>
           <NavContent />

@@ -7,7 +7,12 @@ import Img from "gatsby-image"
 
 export default ({ data }) => (
   <div className={classes.container}>
-    <Nav white />
+    <Nav
+      white
+      title="Servicio Angelopolitano | Refrigeración"
+      description="Soporte Técnico de Refrigeración a Domicilio en Puebla y area metropolitana."
+      canonical="/refrigeracion"
+    />
     <div className={classes.intro}>
       <h1>
         <strong>Soporte Técnico de Refrigeración a Domicilio</strong> en Puebla

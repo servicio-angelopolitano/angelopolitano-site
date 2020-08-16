@@ -35,13 +35,13 @@ export default () => (
         data-netlify="true"
         action="/mensaje-enviado"
       >
-        <label>NOMBRE</label>
+        <label htmlFor="nombre">NOMBRE</label>
         <input name="nombre" />
-        <label>CORREO</label>
+        <label htmlFor="correo">CORREO</label>
         <input name="correo" />
-        <label>TELEFONO</label>
+        <label htmlFor="telefono">TELEFONO</label>
         <input name="telefono" />
-        <label>MENSAJE</label>
+        <label htmlFor="mensaje">MENSAJE</label>
         <textarea name="mensaje" />
         <button type="submit">Enviar</button>
       </form>

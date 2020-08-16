@@ -7,7 +7,12 @@ import Img from "gatsby-image"
 
 export default ({ data }) => (
   <div className={classes.container}>
-    <Nav white />
+    <Nav
+      white
+      title="Servicio Angelopolitano | Lavado y Secado"
+      description="Soporte Técnico de Linea Blanca a Domicilio en Puebla y area metropolitana."
+      canonical="/lavado-secado"
+    />
     <div className={classes.intro}>
       <h1>
         <strong>Soporte Técnico de Linea Blanca</strong> a Domicilio en{" "}

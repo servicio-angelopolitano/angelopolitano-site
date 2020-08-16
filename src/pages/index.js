@@ -10,7 +10,11 @@ import Img from "gatsby-image"
 export default ({ data }) => {
   return (
     <div className={classes.container}>
-      <Nav />
+      <Nav
+        title="Servicio Angelopolitano | Reparación y mantenimiento de línea blanca."
+        description="Reparación y mantenimiento profesional de línea blanca, refrigeración y aire acondicionado."
+        canonical=""
+      />
       <div className={classes.intro}>
         <h1>
           <strong>Reparación</strong> y mantenimiento profesional de{" "}

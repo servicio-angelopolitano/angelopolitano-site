@@ -7,7 +7,12 @@ import Img from "gatsby-image"
 
 export default ({ data }) => (
   <div className={classes.container}>
-    <Nav white />
+    <Nav
+      white
+      title="Servicio Angelopolitano | Aire Acondicionado"
+      description="Aires Acondicionados en Puebla y area metropolitana."
+      canonical="/aire-acondicionado"
+    />
     <div className={classes.intro}>
       <h1>
         <strong>Aires Acondicionados</strong> en <strong>Puebla</strong> y area

@@ -26,7 +26,7 @@ export default () => {
           <Link to="/aire-acondicionado">Aire Acondicionado</Link>
         </li>
         <li>
-          <Link to="#contacto" className={classes.reverse}>
+          <Link to="/#contacto" className={classes.reverse}>
             <img src={phone} alt="Icono Teléfono" />
             Contacto
           </Link>
