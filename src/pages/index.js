@@ -1,6 +1,7 @@
 import React, { Fragment } from "react"
 import "stylesheets/main.module.less"
 import Nav from "components/Nav/Nav"
+import ContactForm from "components/ContactForm/ContactForm"
 import classes from "stylesheets/index.module.less"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
@@ -17,8 +18,8 @@ export default ({ data }) => (
     </div>
     <div className={classes.logos}>
       <h2>
-        <strong>+60</strong> años de experiencia brindando confianza y
-        satisfacción.
+        <b>60</b> años de experiencia brindando <b>confianza</b> y{" "}
+        <b>satisfacción</b>.
       </h2>
       <p>Trabajamos con las marcas principales del mercado.</p>
       <div>
@@ -45,6 +46,9 @@ export default ({ data }) => (
             Soporte técnico de linea blanca a domicilio en la ciudad de{" "}
             <b>Puebla</b> y área metropolitana
           </p>
+          <Link to="/refrigeracion">
+            <button>Detalles</button>
+          </Link>
         </div>
         <Img fluid={data.fridge.childImageSharp.fluid} />
       </div>
@@ -59,6 +63,10 @@ export default ({ data }) => (
             Soporte técnico de linea blanca a domicilio en la ciudad de{" "}
             <b>Puebla</b> y área metropolitana
           </p>
+
+          <Link to="/lavado-secado">
+            <button>Detalles</button>
+          </Link>
         </div>
         <Img fluid={data.machine.childImageSharp.fluid} />
       </div>
@@ -74,14 +82,14 @@ export default ({ data }) => (
             Soporte técnico de linea blanca a domicilio en la ciudad de{" "}
             <b>Puebla</b> y área metropolitana
           </p>
+          <Link to="/refrigeracion">
+            <button>Detalles</button>
+          </Link>
         </div>
         <Img fluid={data.minisplit.childImageSharp.fluid} />
       </div>
     </div>
-    <div className={classes.contact}>
-      <h3>Contacto</h3>
-      <p>[Forma de contacto aquí]</p>
-    </div>
+    <ContactForm />
   </div>
 )
 
@@ -103,21 +111,21 @@ export const query = graphql`
     }
     fridge: file(relativePath: { eq: "fridge-tall.jpg" }) {
       childImageSharp {
-        fluid(quality: 100, maxWidth: 1000) {
+        fluid(quality: 100, maxWidth: 600) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     machine: file(relativePath: { eq: "lavadora.jpg" }) {
       childImageSharp {
-        fluid(quality: 100, maxWidth: 1000) {
+        fluid(quality: 100, maxWidth: 600) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     minisplit: file(relativePath: { eq: "minisplit.jpg" }) {
       childImageSharp {
-        fluid(quality: 100, maxWidth: 1000) {
+        fluid(quality: 100, maxWidth: 600) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

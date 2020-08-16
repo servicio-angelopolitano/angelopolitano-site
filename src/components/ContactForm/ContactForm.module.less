@@ -1,0 +1,113 @@
+@import "../../stylesheets/variables.less";
+.container {
+  padding: 60px 15px 140px;
+  background: @darkest;
+  h3 {
+    text-align: left;
+    padding: 10px 0px 50px;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: @primary;
+  }
+  .content {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+  }
+  form {
+    padding-top: 190px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      outline: none;
+      resize: none;
+      color: whitesmoke;
+      font-size: 1.2rem;
+      font-weight: 300 !important;
+    }
+    label {
+      color: aliceblue;
+      font-size: 0.8rem;
+    }
+    button {
+      width: 100px;
+      margin: auto;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 1.6rem;
+      background: @dark;
+      outline: none;
+      font-weight: 300;
+    }
+  }
+  .details {
+    > a {
+      font-size: 3.2rem;
+      color: white;
+      font-weight: 100;
+    }
+    p {
+      color: white;
+      padding: 40px 0px 0px 0px;
+      max-width: 320px;
+      font-size: 0.9rem;
+    }
+    .buttons {
+      display: flex;
+      align-items: flex-start;
+      padding-top: 20px;
+    }
+    button {
+      display: inline-flex;
+      align-items: center;
+      background: white;
+      padding: 10px;
+      height: 32px;
+      font-size: 1.1rem;
+      border-radius: 4px;
+      color: #1f73be;
+      font-weight: 700;
+      border: none;
+      margin-right: 8px;
+      img {
+        width: 24px;
+        padding-right: 6px;
+      }
+    }
+    a:nth-child(2) button img {
+      width: 18px !important;
+    }
+  }
+}
+@media (max-width: 660px){
+  .container{
+    padding-bottom: 60px;
+    h3{
+      font-size: 4rem;
+    }
+    .details{
+      p{
+        max-width: 100%;
+      }
+    }
+    .content{
+      flex-direction: column;
+      form{
+        padding-top: 100px;
+        width: 100%;
+      }
+    }
+  }
+}

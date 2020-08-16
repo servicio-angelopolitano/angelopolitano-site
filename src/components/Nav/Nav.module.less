@@ -1,18 +1,28 @@
 @import "../../stylesheets/variables.less";
 
 .container {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
-  height: 60px;
-  /*background: @primary;*/
+  height: 50px;
   background: transparent;
   width: 100vw;
   z-index: 1000;
+  transition: all 0.2s;
   .content {
     height: 100%;
     position: relative;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
+  }
+  a {
+    transition: all 0.2s;
+  }
+}
+.blue {
+  background: white;
+  box-shadow: 0px 0px 10px 0px #00000017;
+  div > a > img{
+    filter: brightness(0);
   }
 }

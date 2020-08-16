@@ -40,37 +40,31 @@
   }
   .logos {
     background: #f9f9f9;
-    padding: 80px 10px;
     h2,
     p {
-      font-size: 1.6rem;
-      max-width: 800px;
-      margin: auto;
+      font-size: 3rem;
+      width: calc(100% - 40px);
       text-align: center;
-      strong {
-        font-size: 2.7rem;
-      }
+    }
+    h2 {
+      padding: 150px 20px 160px;
+      background: white;
     }
     p {
-      font-size: 1.1rem;
-      font-weight: 700;
-      padding: 20px 10px 50px;
+      font-size: 1.32rem;
+      padding: 80px 10px 0px;
     }
     > div {
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
       text-align: center;
-      padding: 30px 0px;
+      padding: 30px 0px 60px;
       :global {
         .gatsby-image-wrapper {
           display: inline-block;
-          width: 120px !important;
+          width: 120px;
           height: auto !important;
-          margin: 8px 20px;
-          img {
-            width: 120px !important;
-            height: auto !important;
-          }
+          margin: 36px;
         }
       }
     }
@@ -78,7 +72,7 @@
   .servicios {
     height: fit-content;
     position: relative;
-    padding: 10px 10px 80px;
+    padding: 0px 10px 180px;
     > div {
       h2,
       h2 b {
@@ -101,7 +95,7 @@
   }
   .service,
   .serviceAlt {
-    padding-top: 100px;
+    padding-top: 160px;
     position: relative;
     display: flex;
     position: relative;
@@ -109,6 +103,25 @@
     max-width: 900px;
     width: 100%;
     margin: auto;
+    .text {
+      display: flex;
+      flex-direction: column;
+      button {
+        background: @primary;
+        color: white;
+        border: none;
+        padding: 6px 16px;
+        border-radius: 4px;
+        font-size: 1.1rem;
+        margin-top: 8px;
+        cursor: pointer;
+        transition: all 0.2s;
+        filter: brightness(1);
+      }
+      button:hover {
+        filter: brightness(0.9);
+      }
+    }
     h2 {
       a {
         display: inline-block;
@@ -121,19 +134,20 @@
       }
     }
     p {
-      padding: 20px;
-      background: #f1efef;
-      b{
+      padding: 30px 20px;
+      background: #f9f9f9;
+      font-size: 1.1rem;
+      b {
         font-weight: 700;
       }
     }
     :global {
       .gatsby-image-wrapper {
         width: 60%;
-        height: 270px !important;
+        height: 350px !important;
         img {
           width: 100% !important;
-          height: 270px !important;
+          height: 350px !important;
           object-position: center;
         }
         img {
@@ -148,6 +162,7 @@
   .serviceAlt {
     .text {
       order: 2;
+      align-items: flex-end;
     }
     h2 {
       text-align: right !important;
@@ -158,23 +173,53 @@
       }
     }
   }
-  .contact {
-    height: 300px;
-    padding: 100px 10px;
-    background: #0b1077;
-    h3 {
-      color: white;
-      text-align: left;
-      padding: 10px;
-      max-width: 800px;
-      width: 100%;
-      margin: auto;
-      font-size: 3rem;
-      font-weight: 700;
+}
+
+@media (max-width: 650px) {
+  .logos {
+    :global {
+      .gatsby-image-wrapper {
+        margin: 30px !important;
+      }
     }
-    p {
-      text-align: center;
-      color: white;
+  }
+}
+
+@media (max-width: 570px) {
+  .container {
+    .intro {
+      h1 {
+        width: calc(100% - 40px);
+        font-size: 2.8rem;
+        left: 20px;
+      }
+    }
+    .logos {
+      :global {
+        .gatsby-image-wrapper {
+          width: 90px !important;
+          margin: 10px !important;
+        }
+      }
+    }
+    .service {
+      :global {
+        .gatsby-image-wrapper {
+          position: absolute !important;
+          z-index: -10;
+          right: 0;
+          filter: opacity(0.4);
+        }
+      }
+    }
+    .serviceAlt {
+      :global {
+        .gatsby-image-wrapper {
+          position: absolute !important;
+          z-index: -10;
+          filter: opacity(0.4);
+        }
+      }
     }
   }
 }

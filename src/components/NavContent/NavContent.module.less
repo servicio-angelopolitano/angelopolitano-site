@@ -8,7 +8,7 @@
     position: relative;
     width: fit-content;
     img {
-      height: 60px;
+      height: 50px;
       display: block;
       position: relative;
     }
@@ -18,15 +18,105 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    transition: opacity 0.5s 0s, visibility 0s 0.5s;
     li {
       list-style-type: none;
       a {
         padding: 6px 12px;
         border-radius: 4px;
         background: white;
-        margin: 0px 10px;
-        font-weight: 600 !important;
+        margin: 0px 5px;
+        font-weight: 300 !important;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        img {
+          height: 14px;
+          filter: brightness(20);
+          display: inline-block;
+          margin-right: 8px;
+          * {
+            color: white;
+          }
+        }
       }
+      .reverse {
+        background: @primary;
+        color: white;
+        font-weight: 700 !important;
+      }
+    }
+  }
+  .closeButton,
+  .menuButton {
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 0;
+    z-index: 400;
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 920px) {
+  .container {
+    .logo {
+      position: absolute;
+    }
+    ul {
+      position: fixed;
+      z-index: 300;
+      height: 100vh;
+      width: 100vw;
+      left: 0;
+      top: 0;
+      background: white;
+      flex-direction: column;
+      opacity: 0;
+      visibility: hidden;
+      li {
+        display: block;
+        padding: 28px;
+        font-size: 1.8rem;
+        a {
+          font-weight: 300 !important;
+        }
+      }
+    }
+  }
+
+  .menuButton {
+    z-index: 200 !important;
+    display: block !important;
+    top: 5px !important;
+    right: 5px !important;
+    background-color: white;
+    padding: 5px !important;
+    border-radius: 4px;
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .menuOpen {
+    ul {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transition: opacity 0.5s 0s;
+      li {
+        text-align: center;
+      }
+    }
+    ul::before {
+      content: "REPARACIÓN DE";
+      padding-bottom: 15px;
+      font-weight: 900;
+      color: #2f2f2f;
+    }
+    .closeButton {
+      display: block;
+    }
+    .menuButton {
+      display: none;
     }
   }
 }
