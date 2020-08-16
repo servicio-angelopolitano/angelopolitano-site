@@ -34,6 +34,9 @@ export default () => (
         className={classes.form}
         data-netlify="true"
         action="/mensaje-enviado"
+        name="contact"
+        method="POST"
+        netlify
       >
         <label htmlFor="nombre">NOMBRE</label>
         <input name="nombre" />
