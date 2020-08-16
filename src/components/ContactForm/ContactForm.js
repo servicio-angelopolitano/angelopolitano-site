@@ -36,16 +36,15 @@ export default () => (
         action="/mensaje-enviado"
         name="contact"
         method="POST"
-        netlify
       >
         <label htmlFor="nombre">NOMBRE</label>
-        <input name="nombre" />
+        <input name="nombre" required />
         <label htmlFor="correo">CORREO</label>
-        <input name="correo" />
+        <input name="correo" required />
         <label htmlFor="telefono">TELEFONO</label>
-        <input name="telefono" />
+        <input name="telefono" required />
         <label htmlFor="mensaje">MENSAJE</label>
-        <textarea name="mensaje" />
+        <textarea name="mensaje" required />
         <button type="submit">Enviar</button>
       </form>
     </div>

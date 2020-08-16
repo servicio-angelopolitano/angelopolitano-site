@@ -23,22 +23,19 @@ export default ({ title, canonical, description, white }) => {
 
   return (
     <>
-      {canonical ? (
-        <Helmet>
-          <html lang="es" />
-          <meta charSet="utf-8" />
-          <title>{title}</title>
-          <link
-            rel="canonical"
-            href={
-              (process.env.GATSBY_ACTIVE_ENV === "QA"
-                ? NETLIFY_URL
-                : REAL_URL) + canonical
-            }
-          />
-          <meta name="description" content={description} />
-        </Helmet>
-      ) : null}
+      <Helmet>
+        <html lang="es" />
+        <meta charSet="utf-8" />
+        <title>{title}</title>
+        <link
+          rel="canonical"
+          href={
+            (process.env.GATSBY_ACTIVE_ENV === "QA" ? NETLIFY_URL : REAL_URL) +
+            canonical
+          }
+        />
+        <meta name="description" content={description} />
+      </Helmet>
       <div
         className={[
           classes.container,
