@@ -39,11 +39,12 @@
         left: 40px;
         top: 80px;
         height: calc(100vh - 120px) !important;
+        filter: opacity(0.6);
         img {
-          filter: brightness(1);
+          filter: brightness(1.1);
         }
         > img {
-          filter: blur(10px) brightness(1);
+          filter: blur(10px) brightness(1.1);
         }
       }
     }
@@ -62,15 +63,39 @@
       margin: 30px auto 0px;
       max-width: 900px;
       text-align: center;
+      padding: 0px 10px;
       span {
         font-size: 2rem;
         margin: 0px 8px;
+        display: inline-block;
       }
       span:nth-child(even) {
         color: #616161;
       }
       span:nth-child(odd) {
         color: lightgray;
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .container {
+    .intro {
+      h1 {
+        font-size: 2.6rem !important;
+        width: 80vw !important;
+        right: 20px !important;
+      }
+      img {
+        width: 60vw !important;
+      }
+      :global {
+        .gatsby-image-wrapper {
+          width: 60vw !important;
+          left: 20px;
+          filter: opacity(0.4) brightness(1.2) !important;
+        }
       }
     }
   }
