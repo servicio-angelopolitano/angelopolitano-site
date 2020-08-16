@@ -1,0 +1,77 @@
+@import "./variables.less";
+.container {
+  .intro {
+    position: relative;
+    height: 100vh !important;
+    h1 {
+      position: absolute;
+      top: 50%;
+      right: 10%;
+      z-index: 50;
+      width: 60%;
+      color: @primary;
+      max-width: 900px;
+      font-weight: 900;
+      font-size: 3.5rem;
+      transform: translate(0%, -50%);
+      text-align: right;
+
+      background-image: url(images/blur2.jpg);
+      background-size: cover;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      strong {
+        color: #93cdff;
+      }
+    }
+    img {
+      width: 50vw !important;
+      height: calc(100vh - 120px) !important;
+      object-fit: cover;
+      z-index: 1;
+      display: block;
+    }
+    :global {
+      .gatsby-image-wrapper {
+        background: #404144;
+        width: 50vw;
+        left: 40px;
+        top: 80px;
+        height: calc(100vh - 120px) !important;
+        img {
+          filter: brightness(1);
+        }
+        > img {
+          filter: blur(10px) brightness(1);
+        }
+      }
+    }
+  }
+  .description {
+    background: white;
+    padding: 150px 0px;
+    h2 {
+      padding: 0px 30px 50px;
+      background: white;
+      font-size: 2.6rem;
+      width: calc(100% - 60px);
+      text-align: center;
+    }
+    .options {
+      margin: 30px auto 0px;
+      max-width: 900px;
+      text-align: center;
+      span {
+        font-size: 2rem;
+        margin: 0px 8px;
+      }
+      span:nth-child(even) {
+        color: #616161;
+      }
+      span:nth-child(odd) {
+        color: lightgray;
+      }
+    }
+  }
+}
