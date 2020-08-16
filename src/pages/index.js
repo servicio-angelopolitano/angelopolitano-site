@@ -1,111 +1,103 @@
-import React, { Fragment } from "react"
+import React from "react"
 import "stylesheets/main.module.less"
 import Nav from "components/Nav/Nav"
 import ContactForm from "components/ContactForm/ContactForm"
+import MovingText from "components/MovingText/MovingText"
 import classes from "stylesheets/index.module.less"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
-export default ({ data }) => (
-  <div className={classes.container}>
-    <Nav />
-    <div className={classes.intro}>
-      <h1>
-        <strong>Reparación</strong> y mantenimiento profesional de{" "}
-        <strong>línea blanca</strong> y <strong>refrigeración</strong>.
-      </h1>
-      <Img fluid={data.banner.childImageSharp.fluid} />
-    </div>
-    <div className={classes.logos}>
-      <h2>
-        <b>60</b> años de experiencia brindando <b>confianza</b> y{" "}
-        <b>satisfacción</b>.
-      </h2>
-      <p>Trabajamos con las marcas principales del mercado.</p>
-      <div>
-        <Img fluid={data.logo1.childImageSharp.fluid} loading="lazy" />
-        <Img fluid={data.logo2.childImageSharp.fluid} loading="lazy" />
-        <Img fluid={data.logo3.childImageSharp.fluid} loading="lazy" />
-        <Img fluid={data.logo4.childImageSharp.fluid} loading="lazy" />
-        <Img fluid={data.logo5.childImageSharp.fluid} loading="lazy" />
-        <Img fluid={data.logo6.childImageSharp.fluid} loading="lazy" />
-        <Img fluid={data.logo7.childImageSharp.fluid} loading="lazy" />
-        <Img fluid={data.logo8.childImageSharp.fluid} loading="lazy" />
-        <Img fluid={data.logo9.childImageSharp.fluid} loading="lazy" />
+export default ({ data }) => {
+  return (
+    <div className={classes.container}>
+      <Nav />
+      <div className={classes.intro}>
+        <h1>
+          <strong>Reparación</strong> y mantenimiento profesional de{" "}
+          <strong>línea blanca</strong> y <strong>refrigeración</strong>.
+        </h1>
+        <Img fluid={data.banner.childImageSharp.fluid} />
       </div>
-    </div>
-    <div className={classes.servicios}>
-      <div className={classes.service}>
-        <div className={classes.text}>
-          <h2>
-            <Link to="/refrigeracion">
-              <b>Refrigeradores</b> <br />& Congeladores
-            </Link>
-          </h2>
-          <p>
-            <strong>Soporte Técnico</strong> de Refrigeración{" "}
-            <strong>a Domicilio</strong> en <strong>Puebla</strong> y area
-            metropolitana.
-          </p>
-          <Link to="/refrigeracion">
-            <button>Detalles</button>
-          </Link>
+      <div className={classes.logos}>
+        <h2>
+          <b>60</b> años de experiencia brindando <b>confianza</b> y{" "}
+          <b>satisfacción</b>.
+        </h2>
+        <p>Trabajamos con las marcas principales del mercado.</p>
+        <div>
+          <Img fluid={data.logo1.childImageSharp.fluid} loading="lazy" />
+          <Img fluid={data.logo2.childImageSharp.fluid} loading="lazy" />
+          <Img fluid={data.logo3.childImageSharp.fluid} loading="lazy" />
+          <Img fluid={data.logo4.childImageSharp.fluid} loading="lazy" />
+          <Img fluid={data.logo5.childImageSharp.fluid} loading="lazy" />
+          <Img fluid={data.logo6.childImageSharp.fluid} loading="lazy" />
+          <Img fluid={data.logo7.childImageSharp.fluid} loading="lazy" />
+          <Img fluid={data.logo8.childImageSharp.fluid} loading="lazy" />
+          <Img fluid={data.logo9.childImageSharp.fluid} loading="lazy" />
         </div>
-        <Img fluid={data.fridge.childImageSharp.fluid} loading="lazy" />
       </div>
-      <div className={classes.serviceAlt}>
-        <div className={classes.text}>
-          <h2>
+      <div className={classes.servicios}>
+        <div className={classes.service}>
+          <div className={classes.text}>
+            <h2>
+              <Link to="/refrigeracion">
+                <b>Refrigeradores</b> <br />& Congeladores
+              </Link>
+            </h2>
+            <p>
+              <strong>Soporte Técnico</strong> de Refrigeración{" "}
+              <strong>a Domicilio</strong> en <strong>Puebla</strong> y area
+              metropolitana.
+            </p>
+            <Link to="/refrigeracion">
+              <button>Detalles</button>
+            </Link>
+          </div>
+          <Img fluid={data.fridge.childImageSharp.fluid} loading="lazy" />
+        </div>
+        <div className={classes.serviceAlt}>
+          <div className={classes.text}>
+            <h2>
+              <Link to="/lavado-secado">
+                <b>Lavadoras</b> <br />& Secadoras
+              </Link>
+            </h2>
+            <p>
+              <strong>Soporte Técnico</strong> de Linea Blanca{" "}
+              <strong>a Domicilio</strong> en <strong>Puebla</strong> y area
+              metropolitana.
+            </p>
+
             <Link to="/lavado-secado">
-              <b>Lavadoras</b> <br />& Secadoras
+              <button>Detalles</button>
             </Link>
-          </h2>
-          <p>
-            <strong>Soporte Técnico</strong> de Linea Blanca{" "}
-            <strong>a Domicilio</strong> en <strong>Puebla</strong> y area
-            metropolitana.
-          </p>
-
-          <Link to="/lavado-secado">
-            <button>Detalles</button>
-          </Link>
+          </div>
+          <Img fluid={data.machine.childImageSharp.fluid} loading="lazy" />
         </div>
-        <Img fluid={data.machine.childImageSharp.fluid} loading="lazy" />
-      </div>
-      <div className={classes.service}>
-        <div className={classes.text}>
-          <h2>
+        <div className={classes.service}>
+          <div className={classes.text}>
+            <h2>
+              <Link to="/refrigeracion">
+                <b>Aire</b> <br />
+                Acondicionado
+              </Link>
+            </h2>
+            <p>
+              <strong>Aires Acondicionados</strong> en <strong>Puebla</strong> y
+              area metropolitana.
+            </p>
             <Link to="/refrigeracion">
-              <b>Aire</b> <br />
-              Acondicionado
+              <button>Detalles</button>
             </Link>
-          </h2>
-          <p>
-            <strong>Aires Acondicionados</strong> en <strong>Puebla</strong> y
-            area metropolitana.
-          </p>
-          <Link to="/refrigeracion">
-            <button>Detalles</button>
-          </Link>
+          </div>
+          <Img fluid={data.minisplit.childImageSharp.fluid} loading="lazy" />
         </div>
-        <Img fluid={data.minisplit.childImageSharp.fluid} loading="lazy" />
       </div>
+      <MovingText />
+      <ContactForm />
     </div>
-    <div className={classes.black}>
-      <h3>
-        GARANTÍA <b>POR ESCRITO</b>
-      </h3>
-      <h3>
-        SERVICIO <b>EL MISMO DIA</b>
-      </h3>
-      <h3>
-        REFACCIONES <b>ORIGINALES</b>
-      </h3>
-    </div>
-    <ContactForm />
-  </div>
-)
-
+  )
+}
 export const query = graphql`
   fragment CompanyLogo on File {
     childImageSharp {
