@@ -11,6 +11,10 @@
   [headers.values]
     Cache-Control = "public, s-max-age=86400"
 [[headers]]
+  for = "/*.json"
+  [headers.values]
+    Cache-Control = "public, s-max-age=86400"
+[[headers]]
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, s-max-age=86400"
@@ -20,6 +24,10 @@
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
   for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "/*.webp"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
