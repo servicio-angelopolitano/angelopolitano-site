@@ -38,13 +38,13 @@ export default () => (
         method="POST"
       >
         <label htmlFor="nombre">NOMBRE</label>
-        <input name="nombre" required />
+        <input id="nombre" name="nombre" required type="text" />
         <label htmlFor="correo">CORREO</label>
-        <input name="correo" required />
+        <input id="correo" name="correo" required type="text" />
         <label htmlFor="telefono">TELEFONO</label>
-        <input name="telefono" required />
+        <input id="telefono" name="telefono" required type="text" />
         <label htmlFor="mensaje">MENSAJE</label>
-        <textarea name="mensaje" required />
+        <textarea id="mensaje" name="mensaje" required />
         <button type="submit">Enviar</button>
       </form>
     </div>
