@@ -16,10 +16,11 @@ module.exports = {
       options: {
         host: "https://www.servicioangelopolitano.com",
         sitemap: "https://www.servicioangelopolitano.com/sitemap.xml",
-        policy:
-          process.env.GATSBY_ACTIVE_ENV === "QA"
+        policy: /*process.env.GATSBY_ACTIVE_ENV === "QA"
             ? [{ userAgent: "*", disallow: ["/"] }]
-            : [{ userAgent: "*", allow: "/" }],
+            : */ [
+          { userAgent: "*", allow: "/" },
+        ],
       },
     },
     {
