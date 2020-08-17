@@ -9,7 +9,7 @@ const REAL_URL = "https://www.servicioangelopolitano.com"
 export default ({ title, canonical, description, white }) => {
   let [scrolled, setScrolled] = useState(false)
 
-  useEffect(() => {
+  /*useEffect(() => {
     if (typeof window !== undefined) {
       window.addEventListener("scroll", e => {
         if (window.scrollY > 150) {
@@ -19,7 +19,7 @@ export default ({ title, canonical, description, white }) => {
         }
       })
     }
-  }, [])
+  }, [])*/
 
   return (
     <>

@@ -11,6 +11,7 @@ export default ({ data }) => {
   return (
     <div className={classes.container}>
       <Nav
+      white
         title="Servicio Angelopolitano | Reparación y mantenimiento de línea blanca."
         description="Reparación y mantenimiento profesional de línea blanca, refrigeración y aire acondicionado."
         canonical=""
