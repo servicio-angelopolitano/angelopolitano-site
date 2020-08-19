@@ -23,6 +23,7 @@ export default () => (
             rel="noopener noreferrer"
             href="https://api.whatsapp.com/send?phone=+5212224662012&text=Estoy%20interesado%20en%20sus%20servicios."
             className={classes.wpButton}
+            target="_blank"
           >
             <button>
               <img src={whatsapp} alt="" />
@@ -33,6 +34,7 @@ export default () => (
             rel="noopener noreferrer"
             href="tel:2224662012"
             className={classes.phoneButton}
+            target="_blank"
           >
             <button>
               <img src={phone} alt="" />
@@ -40,7 +42,11 @@ export default () => (
             </button>
           </a>
           <div>
-            <a rel="noopener noreferrer" href="/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/Servicio-Angelopolitano-112038447281029/"
+            >
               <button>
                 <img src={fb} alt="" />
                 Facebook
