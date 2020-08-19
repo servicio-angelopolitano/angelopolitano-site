@@ -11,6 +11,7 @@ export default ({ options, producto }) => (
       <form
         className={classes.form}
         data-netlify="true"
+        action="/mensaje-enviado/"
         name="forma-descuento"
         method="POST"
       >
@@ -68,6 +69,7 @@ export default ({ options, producto }) => (
         <div className={classes.hidden}>
           <label htmlFor="producto">PRODUCTO</label>
           <input id="producto" name="producto" type="input" value={producto} />
+          <input type="hidden" name="form-name" value="forma-descuento" />
         </div>
         <button type="submit">Enviar</button>
       </form>
