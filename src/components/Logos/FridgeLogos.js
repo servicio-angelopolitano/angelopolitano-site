@@ -52,19 +52,13 @@ export default () => {
           logo14: file(relativePath: { eq: "other_logos/ojeda.png" }) {
             ...CompanyLogo
           }
-          logo15: file(relativePath: { eq: "other_logos/easy.jpg" }) {
-            ...CompanyLogo
-          }
-          logo16: file(relativePath: { eq: "other_logos/imbera.png" }) {
-            ...CompanyLogo
-          }
         }
       `}
       render={data => (
         <div className={classes.logos}>
           <p>Trabajamos con las marcas principales del mercado.</p>
           <div>
-            {Array(16)
+            {Array(14)
               .fill()
               .map((_, index) => (
                 <Img

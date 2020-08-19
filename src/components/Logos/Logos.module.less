@@ -22,8 +22,8 @@
     margin: auto;
     text-align: center;
     padding: 60px 0px 100px;
-    img{
-        object-fit: contain !important;
+    img {
+      object-fit: contain !important;
     }
     :global {
       .gatsby-image-wrapper {
@@ -31,6 +31,18 @@
         height: 50px;
         width: 120px;
         margin: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .logos {
+    :global {
+      .gatsby-image-wrapper {
+        width: 90px !important;
+        height: 36px !important;
+        margin: 10px !important;
       }
     }
   }
