@@ -65,9 +65,15 @@ export default () => (
         <label htmlFor="nombre">NOMBRE</label>
         <input id="nombre" name="nombre" required type="text" />
         <label htmlFor="correo">CORREO</label>
-        <input id="correo" name="correo" required type="text" />
+        <input id="correo" name="correo" required type="email" />
         <label htmlFor="telefono">TELEFONO</label>
-        <input id="telefono" name="telefono" required type="text" />
+        <input
+          id="telefono"
+          name="telefono"
+          required
+          type="number"
+          step={false}
+        />
         <label htmlFor="mensaje">MENSAJE</label>
         <textarea id="mensaje" name="mensaje" required />
         <button type="submit">Enviar</button>

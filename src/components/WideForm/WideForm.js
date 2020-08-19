@@ -32,9 +32,9 @@ export default ({ options, producto }) => (
               id="correo"
               name="correo"
               required
-              type="text"
+              type="email"
               placeholder="Correo"
-            />{" "}
+            />
           </div>
           <div>
             <label htmlFor="telefono">TELÉFONO</label>
@@ -42,13 +42,19 @@ export default ({ options, producto }) => (
               id="telefono"
               name="telefono"
               required
-              type="text"
+              type="number"
               placeholder="Teléfono"
-            />{" "}
+              step={false}
+            />
           </div>
           <div>
             <label htmlFor="servicio">SERVICIO</label>
-            <select id="servicio" name="servicio" placeholder="Servicio">
+            <select
+              id="servicio"
+              name="servicio"
+              placeholder="Servicio"
+              defaultValue={null}
+            >
               <option value={null} disabled>
                 Selecciona un Servicio
               </option>
