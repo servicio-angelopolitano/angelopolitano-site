@@ -11,7 +11,7 @@ export default ({ options, producto }) => (
       <form
         className={classes.form}
         data-netlify="true"
-        action="/mensaje-enviado"
+        action="/mensaje-enviado/"
         name="forma-descuento"
         method="POST"
       >

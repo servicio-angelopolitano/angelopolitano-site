@@ -52,7 +52,7 @@ export default () => (
       <form
         className={classes.form}
         data-netlify="true"
-        action="/mensaje-enviado"
+        action="/mensaje-enviado/"
         name="contacto"
         method="POST"
       >
