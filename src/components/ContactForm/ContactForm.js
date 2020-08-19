@@ -76,6 +76,7 @@ export default () => (
         />
         <label htmlFor="mensaje">MENSAJE</label>
         <textarea id="mensaje" name="mensaje" required />
+        <input type="hidden" name="form-name" value="contacto" />
         <button type="submit">Enviar</button>
       </form>
     </div>
