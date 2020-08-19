@@ -6,6 +6,7 @@ import classes from "stylesheets/service.module.less"
 import Img from "gatsby-image"
 import FridgeLogos from "components/Logos/FridgeLogos"
 import MovingText from "components/MovingText/MovingText"
+import WideForm from "../components/WideForm/WideForm"
 
 export default ({ data }) => (
   <div className={classes.container}>
@@ -35,6 +36,10 @@ export default ({ data }) => (
         <span>Y más...</span>
       </div>
     </div>
+    <WideForm
+      options={["Lavadoras", "Secadoras", "Lavasecadoras", "Centros de Lavado"]}
+      producto="Linea Blanca"
+    />
     <FridgeLogos />
     <div className={classes.allDetails}>
       <div className={classes.detailsFloor}>
