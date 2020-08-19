@@ -17,13 +17,13 @@ export default () => {
       </Link>
       <ul onClick={() => setOpen(false)}>
         <li>
-          <Link to="/linea-blanca">Lavadoras & Secadoras</Link>
+          <Link to="/linea-blanca/">Lavadoras & Secadoras</Link>
         </li>
         <li>
-          <Link to="/refrigeracion">Refrigeradores</Link>
+          <Link to="/refrigeracion/">Refrigeradores</Link>
         </li>
         <li>
-          <Link to="/aire-acondicionado">Aire Acondicionado</Link>
+          <Link to="/aire-acondicionado/">Aire Acondicionado</Link>
         </li>
         <li>
           <a href="#contacto" className={classes.reverse}>
