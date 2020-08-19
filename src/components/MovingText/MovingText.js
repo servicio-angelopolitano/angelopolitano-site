@@ -7,7 +7,7 @@ let getTriggerPoint = (id, offset) => {
 
 export default () => {
   useEffect(() => {
-    let triggerPoint = getTriggerPoint("movingText", 200)
+    let triggerPoint = getTriggerPoint("movingText", 0)
 
     let setStyle = (property, offset, it) => {
       if (
@@ -27,7 +27,7 @@ export default () => {
       window.addEventListener("scroll", e => {
         let scroll = window.scrollY
         if (scroll > triggerPoint) {
-          let offset = (scroll - triggerPoint) / 15
+          let offset = (scroll - triggerPoint) / 15 - 30
           document
             .querySelectorAll("#movingText h3:nth-child(odd)")
             .forEach(it => {
@@ -49,7 +49,7 @@ export default () => {
         GARANTÍA <b>POR ESCRITO</b>
       </h3>
       <h3>
-        SERVICIO <b>EL MISMO DIA</b>
+        SERVICIO <b>EL MISMO DÍA</b>
       </h3>
       <h3>
         REFACCIONES <b>ORIGINALES</b>

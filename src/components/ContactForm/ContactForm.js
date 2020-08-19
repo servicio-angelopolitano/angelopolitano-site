@@ -1,40 +1,59 @@
 import React from "react"
 import classes from "./ContactForm.module.less"
-import whatsapp from "images/whatsapp-b.svg"
+import whatsapp from "images/whatsapp-g.svg"
 import phone from "images/phone-b.svg"
+import fb from "images/facebook.svg"
 
 export default () => (
   <div className={classes.container} id="contacto">
+    <h3>
+      <b>Contacto</b>
+    </h3>
+    <h4>
+      Contáctanos y solicita la visita de un técnico a tu domicilio.{" "}
+      <b>Aceptamos pago con tarjeta.</b>
+    </h4>
     <div className={classes.content}>
       <div className={classes.details}>
-        <h3>Contacto</h3>
-        <a rel="noopener noreferrer" href="tel:2223507488">
-          222 350 7488
+        <a rel="noopener noreferrer" href="tel:2224662012">
+          222 466 2012
         </a>
         <div className={classes.buttons}>
           <a
             rel="noopener noreferrer"
-            href="https://api.whatsapp.com/send?phone=+5212223507488&text=Estoy%20interesado%20en%20sus%20servicios."
+            href="https://api.whatsapp.com/send?phone=+5212224662012&text=Estoy%20interesado%20en%20sus%20servicios."
+            className={classes.wpButton}
           >
             <button>
               <img src={whatsapp} alt="" />
               Whatsapp
             </button>
           </a>
-          <a rel="noopener noreferrer" href="tel:2223507488">
+          <a
+            rel="noopener noreferrer"
+            href="tel:2224662012"
+            className={classes.phoneButton}
+          >
             <button>
               <img src={phone} alt="" />
               Llamar Ahora
             </button>
           </a>
+          <div>
+            <a rel="noopener noreferrer" href="/">
+              <button>
+                <img src={fb} alt="" />
+                Facebook
+              </button>
+            </a>
+          </div>
         </div>
-        <p>Avenida 95 Poniente, Np. 1709. Local 3, Col. Mayorazgo. Puebla.</p>
       </div>
       <form
         className={classes.form}
         data-netlify="true"
         action="/mensaje-enviado"
-        name="contact"
+        name="contacto"
         method="POST"
       >
         <label htmlFor="nombre">NOMBRE</label>

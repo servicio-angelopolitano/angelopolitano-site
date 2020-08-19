@@ -17,7 +17,7 @@ export default () => {
       </Link>
       <ul onClick={() => setOpen(false)}>
         <li>
-          <Link to="/lavado-secado">Lavadoras & Secadoras</Link>
+          <Link to="/linea-blanca">Lavadoras & Secadoras</Link>
         </li>
         <li>
           <Link to="/refrigeracion">Refrigeradores</Link>
@@ -26,10 +26,10 @@ export default () => {
           <Link to="/aire-acondicionado">Aire Acondicionado</Link>
         </li>
         <li>
-          <Link to="/#contacto" className={classes.reverse}>
+          <a href="#contacto" className={classes.reverse}>
             <img src={phone} alt="Icono Teléfono" />
             Contacto
-          </Link>
+          </a>
         </li>
       </ul>
       <img

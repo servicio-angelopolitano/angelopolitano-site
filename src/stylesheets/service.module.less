@@ -51,7 +51,7 @@
   }
   .description {
     background: white;
-    padding: 150px 0px;
+    padding: 150px 0px 80px;
     h2 {
       padding: 0px 30px 50px;
       background: white;
@@ -79,7 +79,7 @@
   }
   .allDetails {
     background: #f9f9f9;
-    padding: 20px 10px 100px;
+    padding: 20px 10px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,7 +102,7 @@
       justify-content: center;
       box-shadow: 0 0 36px 0 #78787826;
       padding-top: 80px;
-      padding-bottom: 20px;
+      padding-bottom: 40px;
       h3 {
         position: absolute;
         width: 100%;
@@ -119,10 +119,32 @@
         font-size: 1.1rem;
         text-align: center;
         line-height: 1.8rem;
+        padding-bottom: 20px;
         b {
           color: @secondary !important;
           font-weight: 700;
         }
+      }
+      button {
+        padding: 6px 14px;
+        border-radius: 4px;
+        background: white;
+        margin: 0px 5px;
+        font-weight: 700 !important;
+        display: block;
+        margin: auto;
+        background: @primary;
+        color: white;
+        border: none;
+        font-size: 1rem;
+        box-shadow: 1px 10px 16px -9px #00000075;
+        cursor: pointer;
+        transition: all 0.3s;
+        filter: brightness(1);
+      }
+      button:hover{
+        filter: brightness(0.9);
+        box-shadow: 1px 1px 16px -9px #00000075;
       }
     }
     :global {
@@ -164,11 +186,13 @@
       }
       img {
         width: 60vw !important;
+        height: 80vh !important;
       }
       :global {
         .gatsby-image-wrapper {
           width: 60vw !important;
           left: 20px;
+          height: 80vh !important;
           filter: opacity(0.4) brightness(1.2) !important;
         }
       }
@@ -196,11 +220,13 @@
         position: relative !important;
         width: 100%;
         min-height: unset;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
         right: unset !important;
-        border-bottom: 11px solid #e8edff;
         p {
           font-size: 1rem;
+        }
+        button{
+          display: none;
         }
       }
       :global {

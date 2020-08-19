@@ -4,6 +4,8 @@ import Nav from "components/Nav/Nav"
 import ContactForm from "components/ContactForm/ContactForm"
 import classes from "stylesheets/service.module.less"
 import Img from "gatsby-image"
+import FridgeLogos from "components/Logos/FridgeLogos"
+import MovingText from "components/MovingText/MovingText"
 
 export default ({ data }) => (
   <div className={classes.container}>
@@ -15,8 +17,7 @@ export default ({ data }) => (
     />
     <div className={classes.intro}>
       <h1>
-        <strong>Soporte Técnico de Refrigeración a Domicilio</strong> en Puebla
-        y area metropolitana.
+        <strong>Soporte Técnico de Refrigeración a Domicilio</strong> en Puebla.
       </h1>
       <Img fluid={data.banner.childImageSharp.fluid} />
     </div>
@@ -37,6 +38,7 @@ export default ({ data }) => (
         <span>Y más...</span>
       </div>
     </div>
+    <FridgeLogos />
     <div className={classes.allDetails}>
       <div className={classes.detailsFloor}>
         <div className={classes.text}>
@@ -51,6 +53,9 @@ export default ({ data }) => (
               <b>refacciones originales</b> para garantizar el buen
               funcionamiento de su equipo.
             </p>
+            <a href="#contacto">
+              <button>Enviar Mensaje</button>
+            </a>
           </div>
         </div>
         <Img fluid={data.reparacion.childImageSharp.fluid} />
@@ -68,6 +73,9 @@ export default ({ data }) => (
               esta manera aseguramos <b>larga vida</b> y{" "}
               <b>excelente funcionalidad</b>.
             </p>
+            <a href="#contacto">
+              <button>Enviar Mensaje</button>
+            </a>
           </div>
         </div>
         <Img fluid={data.mantenimiento.childImageSharp.fluid} />
@@ -83,11 +91,15 @@ export default ({ data }) => (
               lineamientos establecidos por el fabricante, garantizando un{" "}
               <b>buen funcionamiento </b>de sus aparatos.
             </p>
+            <a href="#contacto">
+              <button>Enviar Mensaje</button>
+            </a>
           </div>
         </div>
         <Img fluid={data.instalacion.childImageSharp.fluid} />
       </div>
     </div>
+    <MovingText />
     <ContactForm />
   </div>
 )

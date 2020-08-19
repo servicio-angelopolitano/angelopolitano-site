@@ -4,6 +4,9 @@ import Nav from "components/Nav/Nav"
 import ContactForm from "components/ContactForm/ContactForm"
 import classes from "stylesheets/service.module.less"
 import Img from "gatsby-image"
+import MovingText from "components/MovingText/MovingText"
+import ACLogos from "components/Logos/ACLogos"
+import WideForm from "components/WideForm/WideForm"
 
 export default ({ data }) => (
   <div className={classes.container}>
@@ -35,6 +38,11 @@ export default ({ data }) => (
         <span>Y más...</span>
       </div>
     </div>
+    <WideForm
+      options={["Reparación", "Mantenimiento", "Instalación"]}
+      producto="Aire Acondicionado"
+    />
+    <ACLogos />
     <div className={classes.allDetails}>
       <div className={classes.detailsFloor}>
         <div className={classes.text}>
@@ -42,9 +50,12 @@ export default ({ data }) => (
           <div>
             <p>
               Realizamos <b>mantenimientos periodicos</b> para evitar{" "}
-              <b>daños mayores</b> en sus equipos componentes importantes y
-              <b>ducteria</b>.
+              <b>daños mayores</b> en sus equipos componentes importantes y{" "}
+              <b>ductería</b>.
             </p>
+            <a href="#contacto">
+              <button>Enviar Mensaje</button>
+            </a>
           </div>
         </div>
         <Img fluid={data.mantenimiento.childImageSharp.fluid} />
@@ -61,6 +72,9 @@ export default ({ data }) => (
               cada uno de los <b>fabricantes</b> para evitar <b>daños</b> a los
               equipos.
             </p>
+            <a href="#contacto">
+              <button>Enviar Mensaje</button>
+            </a>
           </div>
         </div>
         <Img fluid={data.instalacion.childImageSharp.fluid} />
@@ -72,22 +86,25 @@ export default ({ data }) => (
             <p>
               Si su equipo presenta algún problema como <b>tirar agua</b>, hace{" "}
               <b>ruidos extraños</b>, no prende, le marca algún <b>error</b>,{" "}
-              <b>no enfria</b>
-              correctamente, llamenos hacemos reparaciones con repuestos
-              originales.
+              <b>no enfria</b> correctamente, llamenos hacemos reparaciones con
+              repuestos originales.
             </p>
+            <a href="#contacto">
+              <button>Enviar Mensaje</button>
+            </a>
           </div>
         </div>
         <Img fluid={data.reparacion.childImageSharp.fluid} />
       </div>
     </div>
+    <MovingText />
     <ContactForm />
   </div>
 )
 
 export const query = graphql`
   query {
-    banner: file(relativePath: { eq: "sweat.jpg" }) {
+    banner: file(relativePath: { eq: "ac_main.jpeg" }) {
       childImageSharp {
         fluid(quality: 100, maxHeight: 1100) {
           ...GatsbyImageSharpFluid_withWebp

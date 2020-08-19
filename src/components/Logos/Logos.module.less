@@ -1,0 +1,37 @@
+.logos {
+  background: white;
+  h2,
+  p {
+    font-size: 3rem;
+    width: calc(100% - 40px);
+    text-align: center;
+    b {
+      font-weight: 700;
+    }
+  }
+  h2 {
+    padding: 150px 20px 160px;
+    background: white;
+  }
+  p {
+    font-size: 1.32rem;
+    padding: 80px 10px 0px;
+  }
+  > div {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    padding: 60px 0px 100px;
+    img{
+        object-fit: contain !important;
+    }
+    :global {
+      .gatsby-image-wrapper {
+        display: inline-block;
+        height: 50px;
+        width: 120px;
+        margin: 16px;
+      }
+    }
+  }
+}
