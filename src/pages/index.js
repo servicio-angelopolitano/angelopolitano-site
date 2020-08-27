@@ -73,7 +73,7 @@ export default ({ data }) => {
               metropolitana.
             </p>
 
-            <Link to="/lavado-secado/">
+            <Link to="/linea-blanca/">
               <button>Detalles</button>
             </Link>
           </div>
@@ -82,7 +82,7 @@ export default ({ data }) => {
         <div className={classes.service}>
           <div className={classes.text}>
             <h2>
-              <Link to="/refrigeracion/">
+              <Link to="/aire-acondicionado/">
                 <b>Aire</b> <br />
                 Acondicionado
               </Link>
