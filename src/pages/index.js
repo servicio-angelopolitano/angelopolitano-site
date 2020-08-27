@@ -63,7 +63,7 @@ export default ({ data }) => {
         <div className={classes.serviceAlt}>
           <div className={classes.text}>
             <h2>
-              <Link to="/lavado-secado/">
+              <Link to="/linea-blanca/">
                 <b>Lavadoras</b> <br />& Secadoras
               </Link>
             </h2>
@@ -73,7 +73,7 @@ export default ({ data }) => {
               metropolitana.
             </p>
 
-            <Link to="/lavado-secado/">
+            <Link to="/linea-blanca/">
               <button>Detalles</button>
             </Link>
           </div>
@@ -82,7 +82,7 @@ export default ({ data }) => {
         <div className={classes.service}>
           <div className={classes.text}>
             <h2>
-              <Link to="/refrigeracion/">
+              <Link to="/aire-acondicionado/">
                 <b>Aire</b> <br />
                 Acondicionado
               </Link>
@@ -91,7 +91,7 @@ export default ({ data }) => {
               <strong>Aires Acondicionados</strong> en <strong>Puebla</strong> y
               area metropolitana.
             </p>
-            <Link to="/refrigeracion/">
+            <Link to="/aire-acondicionado/">
               <button>Detalles</button>
             </Link>
           </div>
