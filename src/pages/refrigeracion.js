@@ -13,12 +13,12 @@ export default ({ data }) => (
     <Nav
       white
       title="Servicio Angelopolitano | Refrigeración"
-      description="Soporte Técnico de Refrigeración a Domicilio en Puebla y area metropolitana."
+      description="Soporte Técnico y Reparación de Refrigeración a Domicilio en Puebla y area metropolitana."
       canonical="/refrigeracion"
     />
     <div className={classes.intro}>
       <h1>
-        <strong>Soporte Técnico de Refrigeración a Domicilio</strong> en Puebla.
+        <strong>Soporte Técnico y Reparación de Refrigeración a Domicilio</strong> en Puebla.
       </h1>
       <Img fluid={data.banner.childImageSharp.fluid} />
     </div>
