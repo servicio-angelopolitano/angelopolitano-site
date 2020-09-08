@@ -13,7 +13,7 @@ export default ({ data }) => (
     <Nav
       white
       title="Servicio Angelopolitano | Aire Acondicionado"
-      description="Aires Acondicionados en Puebla y area metropolitana."
+      description="Soporte Técnico, Instalación y Reparación de Aire Acondicionado a Domicilio en Puebla."
       canonical="/aire-acondicionado"
     />
     <div className={classes.intro}>
