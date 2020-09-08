@@ -18,8 +18,9 @@ export default ({ data }) => (
     />
     <div className={classes.intro}>
       <h1>
-        <strong>Aires Acondicionados</strong> en <strong>Puebla</strong> y area
-        metropolitana.
+        <strong>Soporte Técnico</strong>,<br />
+        <strong>Instalación</strong> y <strong>Reparación</strong> de Aire
+        Acondicionado a Domicilio en Puebla.
       </h1>
       <Img fluid={data.banner.childImageSharp.fluid} />
     </div>
