@@ -15,13 +15,13 @@ export default () => (
     </h4>
     <div className={classes.content}>
       <div className={classes.details}>
-        <a rel="noopener noreferrer" href="tel:2224662012">
-          222 466 2012
+        <a rel="noopener noreferrer" href="tel:4493918113">
+          449 391 8113
         </a>
         <div className={classes.buttons}>
           <a
             rel="noopener noreferrer"
-            href="https://api.whatsapp.com/send?phone=+5212224662012&text=Estoy%20interesado%20en%20sus%20servicios."
+            href="https://api.whatsapp.com/send?phone=+5214493918113&text=Estoy%20interesado%20en%20sus%20servicios."
             className={classes.wpButton}
             target="_blank"
           >
@@ -32,7 +32,7 @@ export default () => (
           </a>
           <a
             rel="noopener noreferrer"
-            href="tel:2224662012"
+            href="tel:4493918113"
             className={classes.phoneButton}
             target="_blank"
           >

@@ -13,13 +13,13 @@ export default ({ data }) => (
     <Nav
       white
       title="Servicio Angelopolitano | Lavado y Secado"
-      description="Soporte Técnico de Linea Blanca a Domicilio en Puebla y area metropolitana."
+      description="Soporte Técnico de Linea Blanca a Domicilio en Aguascalientes y area metropolitana."
       canonical="/lavado-secado"
     />
     <div className={classes.intro}>
       <h1>
         <strong>Soporte Técnico</strong> y reparación de lavadoras y secadoras
-        en Puebla.
+        en Aguascalientes.
       </h1>
       <Img fluid={data.banner.childImageSharp.fluid} />
     </div>
