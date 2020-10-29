@@ -13,14 +13,14 @@ export default ({ data }) => (
     <Nav
       white
       title="Servicio Angelopolitano | Aire Acondicionado"
-      description="Soporte Técnico, Instalación y Reparación de Aire Acondicionado a Domicilio en Puebla."
+      description="Soporte Técnico, Instalación y Reparación de Aire Acondicionado a Domicilio en Aguascalientes."
       canonical="/aire-acondicionado"
     />
     <div className={classes.intro}>
       <h1>
         <strong>Soporte Técnico</strong>,<br />
         <strong>Instalación</strong> y <strong>Reparación</strong> de Aire
-        Acondicionado a Domicilio en Puebla.
+        Acondicionado a Domicilio en Aguascalientes.
       </h1>
       <Img fluid={data.banner.childImageSharp.fluid} />
     </div>
