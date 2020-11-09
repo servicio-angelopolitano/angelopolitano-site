@@ -21,6 +21,14 @@ export default ({ data }) => (
         <strong>Soporte Técnico</strong>,<br />
         <strong>Instalación</strong> y <strong>Reparación</strong> de Aire
         Acondicionado a Domicilio en Aguascalientes.
+        <div>
+          <span>
+            Llámanos Ahora{" "}
+            <a rel="noopener noreferrer" href="tel:4493918113">
+              449 391 8113
+            </a>
+          </span>
+        </div>
       </h1>
       <Img fluid={data.banner.childImageSharp.fluid} />
     </div>
