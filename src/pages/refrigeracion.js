@@ -18,7 +18,18 @@ export default ({ data }) => (
     />
     <div className={classes.intro}>
       <h1>
-        <strong>Soporte Técnico y Reparación de Refrigeración a Domicilio</strong> en Aguascalientes.
+        <strong>
+          Soporte Técnico y Reparación de Refrigeración a Domicilio
+        </strong>{" "}
+        en Aguascalientes.
+        <div>
+          <span>
+            Llámanos Ahora{" "}
+            <a rel="noopener noreferrer" href="tel:4493918113">
+              449 391 8113
+            </a>
+          </span>
+        </div>
       </h1>
       <Img fluid={data.banner.childImageSharp.fluid} />
     </div>

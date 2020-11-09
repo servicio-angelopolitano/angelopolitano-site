@@ -20,6 +20,14 @@ export default ({ data }) => (
       <h1>
         <strong>Soporte Técnico</strong> y reparación de lavadoras y secadoras
         en Aguascalientes.
+        <div>
+          <span>
+            Llámanos Ahora{" "}
+            <a rel="noopener noreferrer" href="tel:4493918113">
+              449 391 8113
+            </a>
+          </span>
+        </div>
       </h1>
       <Img fluid={data.banner.childImageSharp.fluid} />
     </div>
