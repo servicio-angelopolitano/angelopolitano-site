@@ -24,7 +24,7 @@
       strong {
         color: #93cdff;
       }
-      span {
+      a {
         display: inline-flex;
         flex-direction: column;
         width: fit-content;
@@ -32,9 +32,21 @@
         font-size: 18px;
         padding: 12px 12px 2px;
         border-radius: 4px;
-        border: 1px dotted #99aed7;
-        a {
-          font-size: 32px;
+        -webkit-text-fill-color: white;
+        background-image: url(images/blur2.jpg);
+        background-size: 170% 100%;
+        i {
+          font-style: normal;
+          font-size: 44px;
+          display: flex;
+          align-items: center;
+          img {
+            height: 34px !important;
+            display: inline-block;
+            width: auto !important;
+            margin-right: 14px;
+            filter: brightness(10);
+          }
         }
       }
     }
