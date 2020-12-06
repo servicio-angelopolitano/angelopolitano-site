@@ -64,7 +64,7 @@ export default () => {
                 <Img
                   key={index}
                   fluid={data[`logo${index + 1}`].childImageSharp.fluid}
-                  loading="lazy"
+                  
                   alt={console.log("index", `logo${index + 1}`)}
                 />
               ))}

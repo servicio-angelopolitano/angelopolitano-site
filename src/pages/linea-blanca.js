@@ -7,6 +7,7 @@ import Img from "gatsby-image"
 import FridgeLogos from "components/Logos/FridgeLogos"
 import MovingText from "components/MovingText/MovingText"
 import WideForm from "../components/WideForm/WideForm"
+import phone from "images/phone-b.svg"
 
 export default ({ data }) => (
   <div className={classes.container}>
@@ -21,12 +22,13 @@ export default ({ data }) => (
         <strong>Soporte Técnico</strong> y reparación de lavadoras y secadoras
         en Aguascalientes.
         <div>
-          <span>
+          <a rel="noopener noreferrer" href="tel:4493918113">
             Llámanos Ahora{" "}
-            <a rel="noopener noreferrer" href="tel:4493918113">
-              449 391 8113
-            </a>
-          </span>
+            <i rel="noopener noreferrer" href="tel:4493918113">
+              <img src={phone} alt="" />
+              <b>449 391 8113</b>
+            </i>
+          </a>
         </div>
       </h1>
       <Img fluid={data.banner.childImageSharp.fluid} />
