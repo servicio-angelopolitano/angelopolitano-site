@@ -29,10 +29,7 @@ export default ({ title, canonical, description, white }) => {
         <title>{title}</title>
         <link
           rel="canonical"
-          href={
-            (process.env.GATSBY_ACTIVE_ENV === "QA" ? NETLIFY_URL : REAL_URL) +
-            canonical
-          }
+          href={"https://www.servicioangelopolitano.com" + canonical}
         />
         <meta name="description" content={description} />
         <script></script>
