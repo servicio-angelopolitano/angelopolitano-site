@@ -1,0 +1,4 @@
+[22-Sep-2015 02:41:46 America/Chicago] PHP Fatal error:  Class 'SMTP' not found in /home2/gingro/public_html/appinchina.co/PHPMailer-master/class.phpmailer.php on line 1303
+[22-Sep-2015 02:43:08 America/Chicago] PHP Fatal error:  Class 'SMTP' not found in /home2/gingro/public_html/appinchina.co/PHPMailer-master/class.phpmailer.php on line 1303
+[22-Sep-2015 03:33:04 America/Chicago] PHP Parse error:  syntax error, unexpected 'error' (T_STRING), expecting ',' or ';' in /home2/gingro/public_html/appinchina.co/PHPMailer-master/erictest.php on line 35
+[22-Sep-2015 03:33:20 America/Chicago] PHP Parse error:  syntax error, unexpected 'error' (T_STRING), expecting ',' or ';' in /home2/gingro/public_html/appinchina.co/PHPMailer-master/erictest.php on line 35
