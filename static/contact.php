@@ -3,12 +3,14 @@
 	header("Access-Control-Allow-Headers: Content-Type");
 	require_once('./mail/class.phpmailer.php');
 		
-	if(!isset($_POST['email'])) die("Forbidden.");
+	if(!isset($_POST['name'])) die("Forbidden.");
 
-	$subject = 'Nuevo mensage de'.$_POST['name'];
+	$subject = 'Nuevo mensage de '.$_POST['name'];
 	$messageText =	'Nombre: '.$_POST['name'].'<br>'.
             'Telefono: '.$_POST['phone'].'<br>'.
             'Correo: <a href="mailto:'.$_POST['email'].'">'.$_POST['email'].'</a><br>'.
+            'Producto: '.$_POST['product'].'<br>'.
+            'Servicio Específico: '.$_POST['service'].'<br>'.
             'Mensaje: '.$_POST['message'].'<br>';
     
     sendMail($messageText, $subject);

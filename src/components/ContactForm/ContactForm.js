@@ -29,12 +29,13 @@ export default () => {
     formData.append("message", message)
     Axios({
       method: "post",
-      url: "/contact.php",
+      url: "https://www.servicioangelopolitano.com/contact.php",
       data: formData,
       config: { headers: { "Content-Type": "multipart/form-data" } },
     })
       .then(result => {
-        if (result.data !== "success") {
+        console.log("result",result)
+        if (result.data === "success") {
           navigate("/mensaje-enviado/")
         } else throw result
       })
@@ -102,7 +103,6 @@ export default () => {
           className={classes.form}
           onSubmit={sendForm}
           name="contacto"
-          method="POST"
         >
           <label htmlFor="nombre">NOMBRE *</label>
           <input
@@ -125,7 +125,6 @@ export default () => {
             name="telefono"
             required
             type="number"
-            step={false}
             onChange={e => setPhone(e.target.value)}
           />
           <label htmlFor="mensaje">MENSAJE *</label>
