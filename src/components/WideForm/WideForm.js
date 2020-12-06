@@ -9,7 +9,6 @@ export default ({ options, producto }) => {
   let [email, setEmail] = useState("")
   let [phone, setPhone] = useState("")
   let [service, setService] = useState("")
-  let [product, setProduct] = useState("")
 
   let sendForm = e => {
     e.preventDefault()
@@ -25,7 +24,7 @@ export default ({ options, producto }) => {
     formData.append("phone", phone)
     formData.append("email", email)
     formData.append("service", service)
-    formData.append("product", product)
+    formData.append("product", producto)
     Axios({
       method: "post",
       url: "https://www.servicioangelopolitano.com/contact.php",
@@ -99,10 +98,10 @@ export default ({ options, producto }) => {
                 id="servicio"
                 name="servicio"
                 placeholder="Servicio"
-                defaultValue={null}
+                defaultValue="Ninguna Opcion Seleccionada"
                 onChange={e => setService(e.target.value)}
               >
-                <option value={null} disabled>
+                <option value="Ninguna Opcion Seleccionada" disabled>
                   Selecciona un Servicio
                 </option>
                 {options.map((it, index) => (
@@ -119,7 +118,6 @@ export default ({ options, producto }) => {
               id="producto"
               name="producto"
               type="input"
-              onChange={e => setProduct(e.target.value)}
               value={producto}
             />
             <input type="hidden" name="form-name" value="forma-descuento" />
